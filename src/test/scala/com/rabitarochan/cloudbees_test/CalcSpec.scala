@@ -21,5 +21,10 @@ class CalcSpec extends Specification {
     "return 98 for 99" in {
       Calc.decrement(99) === 98
     }
+    
+    "return -1 for 0" in {
+      val i = 0
+      Calc.decrement(i) === -1
+    }
   }
 }
